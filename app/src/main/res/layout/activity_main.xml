@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.weather.adnan.maps2.MainActivity"
+    android:background="@drawable/bgriver">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:id="@+id/temperatureLabel"
+        android:textColor="@android:color/white"
+        android:textSize="80sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/iconImageView"
+        android:layout_alignRight="@+id/humidity"
+        android:layout_alignEnd="@+id/humidity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/temperatureLabel"
+        android:layout_alignRight="@+id/temperatureLabel"
+        android:layout_alignEnd="@+id/temperatureLabel"
+        android:layout_marginRight="-15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Day"
+        android:id="@+id/dayType"
+        android:textSize="35dp"
+        android:textColor="#ff000000"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconImageView"
+        android:src="@mipmap/cloudy_night"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:text="Humidity"
+        android:id="@+id/humidity"
+        android:layout_marginTop="83dp"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/temperatureLabel"
+        android:layout_alignLeft="@+id/dayType"
+        android:layout_alignStart="@+id/dayType" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:text="Precipitation"
+        android:id="@+id/precipitation"
+        android:layout_marginTop="20dp"
+        android:autoText="false"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/humidity"
+        android:layout_alignLeft="@+id/humidity"
+        android:layout_alignStart="@+id/humidity" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:text="Wind Speed"
+        android:id="@+id/windSpeed"
+        android:layout_below="@+id/precipitation"
+        android:layout_alignLeft="@+id/precipitation"
+        android:layout_alignStart="@+id/precipitation"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="5.0"
+        android:id="@+id/humiNum"
+        android:layout_alignTop="@+id/humidity"
+        android:layout_toRightOf="@+id/humidity"
+
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="6.0"
+        android:id="@+id/preciNum"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/precipitation"
+        android:layout_toRightOf="@+id/precipitation"
+        android:layout_alignRight="@+id/humiNum"
+        android:layout_alignEnd="@+id/humiNum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="7.0"
+        android:id="@+id/speedNum"
+
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/windSpeed"
+        android:layout_toRightOf="@+id/windSpeed"
+        android:layout_alignRight="@+id/preciNum"
+        android:layout_alignEnd="@+id/preciNum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/fahrenheit"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"/>
+
+
+</RelativeLayout>
